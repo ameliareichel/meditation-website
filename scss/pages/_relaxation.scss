@@ -1,0 +1,55 @@
+#relaxation {
+    text-align: right;
+    height: 118vh;
+    background-image: linear-gradient($primary-color, #4C5E64);
+
+    .relaxation-heading {
+        @include section-heading;
+        color: #fff;
+        text-shadow: $primary-font-color 0px 0px 16px;
+    }
+
+    .relaxation-description {
+        @include section-description;
+        color: #fff;
+        text-shadow: $primary-font-color 0px 0px 16px;
+    }
+
+    .timer-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .timer-description {
+            @include section-description;
+            font-size: 14px;
+            margin: 0;
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .timer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+            border: 5px solid #fff;
+            filter: drop-shadow(#fff 0px 0px 8px);
+            border-radius: 50%;
+    
+            .timer-count {
+                color: #fff;
+                font-family: $secondary-font;
+                font-size: 52px;
+            }
+        }
+    
+        .timer-button {
+            margin-top: 40px;
+        }
+    }
+}

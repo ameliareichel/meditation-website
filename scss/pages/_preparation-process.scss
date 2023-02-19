@@ -1,0 +1,38 @@
+#preparation-process {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    .prep-img.peace {
+        width: 40%;
+    }
+
+    .prep-img.eyes {
+        width: 50%;
+    }
+
+    .prep-img.lungs {
+        width: 40%;
+    }
+    
+    .prep-img-description {
+        opacity: 0;
+        font-family: $primary-font;
+        font-size: 24px;
+        color: $primary-font-color;
+    }
+
+    .prep-img-description.peace {
+        transition: all 1s;
+    }
+
+    .prep-img-description.eyes {
+        transition: all 2s;
+    }
+
+    .prep-img-description.lungs {
+        transition: all 3s;
+    }
+}

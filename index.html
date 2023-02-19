@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lonely Space</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="navigation-container">
+            <div class="hamburger">☰</div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a class="link" href="#home">Home</a></li>
+                    <li><a class="link" href="#about">About</a></li>
+                    <li><a class="link" href="#preparation">Preparation</a></li>
+                    <li><a class="link" href="#relaxation">Relaxation</a></li>
+                    <li><a class="link" href="#affirmations">Affirmations</a></li>
+                    <li><a class="link" href="#newsletter">Newsletter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img class="background-image" src="resources/home-img.jpg" alt="">
+    <section id="home">
+        <h1 class="home-heading">Lonely Space...</h1>
+        <p class="home-description">Now it's Your time.. <br>
+            Just take a deep breath and relax...</p>
+    </section>
+    <section id="about">
+        <h2 class="about-heading">Where are You now?</h2>
+        <p class="about-description">Finally you've found your virtual, yet quiet place to relax.<br>It's the place
+            where you can for once close your eyes and forget about your surroundings... <br>This. This is Your Lonely
+            Space.
+        </p>
+    </section>
+    <section id="preparation">
+        <video class="prep-video" autoplay="autoplay" muted loop src="resources/prep-vid4.mp4"></video>
+        <div class="prep-content">
+            <h2 class="prep-heading">Prepare for well deserved relaxation...</h2>
+            <p class="prep-description">
+                If you're reading this right now, it means you need a little time for yourself and yourself only.. <br>
+                Now, lets prepare for the relaxation session in your Lonely Space...
+            </p>
+            <button class="button"><a class="link" href="#preparation-process">Prepare</a></button>
+        </div>
+    </section>
+    <section id="preparation-process">
+        <img class="prep-img peace" src="resources/prep-process-3.png" alt="peace-icon">
+        <h3 class="prep-img-description peace">Find a quiet place...</h3>
+        <img class="prep-img eyes" src="resources/prep-process-1.png" alt="eyes-icon">
+        <h3 class="prep-img-description eyes">...Close your eyes</h3>
+        <img class="prep-img lungs" src="resources/prep-process-2.png" alt="lungs-icon">
+        <h3 class="prep-img-description lungs">Take a deep breath...</h3>
+    </section>
+    <section id="relaxation">
+        <h2 class="relaxation-heading">Just relax...</h2>
+        <p class="relaxation-description">Now as you have prepared yourself for the session, lets dive deep into the
+            beautiful world of peace and calmness..</p>
+        <div class="timer-box">
+            <p class="timer-description">Start the timer and relax! Remember to breathe deeply...</p>
+            <div class="timer-container">
+                <p class="timer-count"></p>
+            </div>
+            <button class="timer-button start button">Start</button>
+        </div>
+    </section>
+    <section id="affirmations">
+        <h2 class="affirmations-heading">Lets get positive!</h2>
+        <p class="affirmations-description">After the deep relaxation session, it's time to look bright into the future
+            as well. Life can get stressful, but it's your choice to make it a little calmer, better and sweeter...
+            <br>Lets
+            affirm!
+        </p>
+        <hr>
+        <h3 class="affirmations-subheading">Firstly..</h3>
+        <p class="affirmations-quotes">"I am clearing space for a new chapter, filled with amazing opportunities,
+            abundance and magnificent blessings."</p>
+        <h3 class="affirmations-subheading">...Secondly</h3>
+        <p class="affirmations-quotes">"I cultivate mindfulness. I engage fully in the present moment and focus on one
+            task at a time. I seek greater self-knowledge and awarness."</p>
+        <h3 class="affirmations-subheading">Lastly...</h3>
+        <p class="affirmations-quotes">"I am success! Each day I allow myself the luxury of enjoying the good feelings
+            that come with my achievements."</p>
+    </section>
+    <section id="newsletter">
+        <h2 class="newsletter-heading">Relax whenever & wherever you want!</h2>
+        <p class="newsletter-description">We have spent some nice time together, haven't we? <br> If you liked the
+            little
+            relaxation session we had here, feel free to sign up for a daily newsletter full of positive attitude and
+            affirmations!</p>
+        <form id="newsletter-form" action="https://formspree.io/f/xayzoeyq" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <button class="submit-btn button" type="submit">Submit</button>
+        </form>
+    </section>
+    <footer id="footer">
+        <h4 class="footer-heading">@2023 <a class="link" href="https://github.com/ameliareichel" target="_blank">Amelia
+                Reichel</a></h4>
+        <p class="footer-content"><a class="link"
+                href="https://www.freepik.com/free-vector/natural-green-hand-painted-watercolor-texture-background_30185859.htm#query=green%20watercolor%20background&position=5&from_view=keyword&track=ais"
+                target="_blank">Background
+                image
+                by starline</a> on Freepik</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/newsletter-validation.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+
+</html>

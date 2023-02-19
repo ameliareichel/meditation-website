@@ -1,0 +1,15 @@
+#about {
+    height: 100vh;
+    margin-top: 205px;
+    // padding-bottom: 200px;
+    background-image: linear-gradient($primary-color, #fff);
+    text-align: right;
+
+    .about-heading {
+        @include section-heading;
+    }
+
+    .about-description {
+        @include section-description;
+    }
+}

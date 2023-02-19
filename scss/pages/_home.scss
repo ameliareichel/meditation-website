@@ -1,0 +1,16 @@
+#home {
+
+    .home-heading {
+        font-family: $primary-font;
+        color: $primary-font-color;
+        font-size: 56px;
+        letter-spacing: 4px;
+        font-weight: 800;
+        margin-bottom: 26px;
+    }
+
+    .home-description {
+        @include section-description;
+        margin: 0;
+    }
+}

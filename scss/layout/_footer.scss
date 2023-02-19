@@ -1,0 +1,29 @@
+#footer {
+    position: relative;
+    padding: 5px 30px;
+    bottom: 0;
+    margin: 0;
+    // box-shadow: $primary-font-color 0px -2px 20px;
+    
+
+    .footer-heading {
+        @include section-heading;
+        font-size: 16px;
+        padding-top: 0;
+
+        a {
+            text-transform: capitalize;
+            color: $secondary-color;
+        }
+    }
+
+    .footer-content {
+        @include section-description;
+        font-size: 16px;
+
+        a {
+            text-transform: capitalize;
+            color: $secondary-color;
+        }
+    }
+}
