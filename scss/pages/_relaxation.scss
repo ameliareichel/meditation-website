@@ -40,16 +40,17 @@
             border: 5px solid #fff;
             filter: drop-shadow(#fff 0px 0px 8px);
             border-radius: 50%;
-    
+
             .timer-count {
                 color: #fff;
                 font-family: $secondary-font;
                 font-size: 52px;
             }
         }
-    
+
         .timer-button {
             margin-top: 40px;
+            flex-basis: 50%;
         }
     }
 }

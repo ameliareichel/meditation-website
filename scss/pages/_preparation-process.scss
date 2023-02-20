@@ -5,12 +5,18 @@
     padding-top: 60px;
     padding-bottom: 30px;
 
+    .prep-img {
+        display: block;
+    }
+
     .prep-img.peace {
         width: 40%;
+        flex-basis: 40%
     }
 
     .prep-img.eyes {
         width: 50%;
+        flex-basis: 40%
     }
 
     .prep-img.lungs {
@@ -19,9 +25,12 @@
     
     .prep-img-description {
         opacity: 0;
+        display: block;
         font-family: $primary-font;
         font-size: 24px;
         color: $primary-font-color;
+        flex-basis: 100%;
+        text-align: center;
     }
 
     .prep-img-description.peace {

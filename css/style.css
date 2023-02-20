@@ -253,6 +253,11 @@ section {
   background-color: #d9ebde;
 }
 
+@media all and (min-width: 480px) {
+  section {
+    padding: 0 50px;
+  }
+}
 .button {
   position: relative;
   margin-top: 10px;
@@ -333,6 +338,30 @@ section {
   display: block;
 }
 
+@media all and (min-width: 480px) {
+  #header .navigation-container {
+    padding: 20px 60px;
+    padding-bottom: 0;
+  }
+  #header .navigation-container .navigation .nav-list {
+    padding: 0 60px;
+    padding-top: 80px;
+  }
+  #header .navigation-container .navigation .nav-list li a {
+    color: #fff;
+    line-height: 32px;
+    font-family: "Fraunces", serif;
+    text-shadow: #283028 0px 0px 6px;
+    transition: all 0.3s;
+  }
+  #header .navigation-container .navigation .nav-list li a:hover {
+    font-weight: 600;
+    text-shadow: #d9ebde 0px 0px 12px;
+  }
+  #header .navigation-container .navigation .unfolded {
+    display: block;
+  }
+}
 #footer {
   position: relative;
   padding: 5px 30px;
@@ -363,6 +392,9 @@ section {
   color: #4e9b4e;
 }
 
+#home {
+  height: 100vh;
+}
 #home .home-heading {
   font-family: "Fraunces", serif;
   color: #283028;
@@ -381,7 +413,7 @@ section {
 
 #about {
   height: 100vh;
-  margin-top: 205px;
+  margin-top: -148px;
   background-image: linear-gradient(#d9ebde, #fff);
   text-align: right;
 }
@@ -441,20 +473,28 @@ section {
   padding-top: 60px;
   padding-bottom: 30px;
 }
+#preparation-process .prep-img {
+  display: block;
+}
 #preparation-process .prep-img.peace {
   width: 40%;
+  flex-basis: 40%;
 }
 #preparation-process .prep-img.eyes {
   width: 50%;
+  flex-basis: 40%;
 }
 #preparation-process .prep-img.lungs {
   width: 40%;
 }
 #preparation-process .prep-img-description {
   opacity: 0;
+  display: block;
   font-family: "Fraunces", serif;
   font-size: 24px;
   color: #283028;
+  flex-basis: 100%;
+  text-align: center;
 }
 #preparation-process .prep-img-description.peace {
   transition: all 1s;
@@ -522,6 +562,7 @@ section {
 }
 #relaxation .timer-box .timer-button {
   margin-top: 40px;
+  flex-basis: 50%;
 }
 
 #affirmations {
