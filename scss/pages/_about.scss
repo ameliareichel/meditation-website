@@ -12,3 +12,10 @@
         @include section-description;
     }
 }
+
+@media all and (min-width: $extra-large-size) {
+
+    #about {
+        margin-top: -234px;
+    }
+}

@@ -22,7 +22,7 @@
     .prep-img.lungs {
         width: 40%;
     }
-    
+
     .prep-img-description {
         opacity: 0;
         display: block;
@@ -43,5 +43,25 @@
 
     .prep-img-description.lungs {
         transition: all 3s;
+    }
+}
+
+@media all and (min-width: $medium-size) {
+
+    #preparation-process {
+
+        .prep-img.peace {
+            width: 20%;
+            flex-basis: 20%
+        }
+
+        .prep-img.eyes {
+            width: 25%;
+            flex-basis: 20%
+        }
+
+        .prep-img.lungs {
+            width: 20%;
+        }
     }
 }

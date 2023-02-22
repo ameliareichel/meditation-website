@@ -258,6 +258,21 @@ section {
     padding: 0 50px;
   }
 }
+@media all and (min-width: 992px) {
+  section {
+    padding: 0 70px;
+  }
+}
+@media all and (min-width: 768px) {
+  .background-image {
+    width: 100%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .background-image {
+    width: 100%;
+  }
+}
 .button {
   position: relative;
   margin-top: 10px;
@@ -362,11 +377,45 @@ section {
     display: block;
   }
 }
+@media all and (min-width: 1024px) {
+  #header {
+    height: 100px;
+  }
+  #header .navigation-container .hamburger {
+    display: none;
+  }
+  #header .navigation-container .navigation .nav-list {
+    text-align: center;
+    background-image: none;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding: 50px 0;
+    padding-bottom: 0;
+  }
+  #header .navigation-container .navigation .nav-list li {
+    display: inline;
+  }
+  #header .navigation-container .navigation .nav-list li a {
+    display: inline;
+    margin: 0 20px;
+    color: #283028;
+    font-family: "Fraunces", serif;
+    text-shadow: none;
+    transition: all 0.3s;
+  }
+  #header .navigation-container .navigation .nav-list li a:hover {
+    font-weight: 400;
+    text-shadow: #4e9b4e 0px 0px 12px;
+  }
+}
 #footer {
   position: relative;
   padding: 5px 30px;
   bottom: 0;
   margin: 0;
+  text-align: center;
 }
 #footer .footer-heading {
   padding-top: 40px;
@@ -411,6 +460,11 @@ section {
   margin: 0;
 }
 
+@media all and (min-width: 1024px) {
+  #home {
+    margin-top: 100px;
+  }
+}
 #about {
   height: 100vh;
   margin-top: -148px;
@@ -430,6 +484,11 @@ section {
   color: #283028;
 }
 
+@media all and (min-width: 1024px) {
+  #about {
+    margin-top: -234px;
+  }
+}
 #preparation {
   height: 100vh;
   padding: 0;
@@ -466,6 +525,14 @@ section {
   z-index: 10000;
 }
 
+@media all and (min-width: 992px) {
+  #preparation .prep-video {
+    width: 100%;
+  }
+  #preparation .prep-content {
+    padding: 0 70px;
+  }
+}
 #preparation-process {
   display: flex;
   justify-content: center;
@@ -506,6 +573,19 @@ section {
   transition: all 3s;
 }
 
+@media all and (min-width: 768px) {
+  #preparation-process .prep-img.peace {
+    width: 20%;
+    flex-basis: 20%;
+  }
+  #preparation-process .prep-img.eyes {
+    width: 25%;
+    flex-basis: 20%;
+  }
+  #preparation-process .prep-img.lungs {
+    width: 20%;
+  }
+}
 #relaxation {
   text-align: right;
   height: 118vh;
@@ -561,10 +641,37 @@ section {
   font-size: 52px;
 }
 #relaxation .timer-box .timer-button {
-  margin-top: 40px;
+  margin: 40px 60px;
   flex-basis: 50%;
 }
 
+@media all and (min-width: 658px) {
+  #relaxation .timer-box .timer-container {
+    width: 240px;
+    height: 240px;
+    margin: 30px 50px;
+  }
+}
+@media all and (min-width: 768px) {
+  #relaxation .timer-box .timer-description {
+    flex-basis: 100%;
+  }
+  #relaxation .timer-box .timer-container {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media all and (min-width: 1024px) {
+  #relaxation .timer-box .timer-container {
+    width: 240px;
+    height: 240px;
+    margin: 30px 200px;
+  }
+  #relaxation .timer-box .timer-button {
+    flex-basis: 30%;
+    margin: 30px 200px;
+  }
+}
 #affirmations {
   margin-top: -33px;
   padding-bottom: 30px;
@@ -665,5 +772,19 @@ section {
   transition: all 0.5s;
 }
 #newsletter #newsletter-form .submit-btn::after {
-  background-image: linear-gradient(transparent, #4e9b4e);
+  display: none;
+}
+#newsletter #newsletter-form .submit-btn:hover {
+  filter: drop-shadow(#4e9b4e 0px 0px 1px);
+}
+
+@media all and (min-width: 576px) {
+  #newsletter #newsletter-form input {
+    width: 96%;
+  }
+}
+@media all and (min-width: 992px) {
+  #newsletter #newsletter-form input {
+    width: 98%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -52,7 +52,37 @@
             transition: all 0.5s;
 
             &::after {
-                background-image: linear-gradient(transparent, $secondary-color);
+                display: none;
+            }
+
+            &:hover {
+                filter: drop-shadow($secondary-color 0px 0px 1px);
+            }
+        }
+    }
+}
+
+@media all and (min-width: $small-size) {
+
+    #newsletter {
+
+        #newsletter-form {
+
+            input {
+                width: 96%;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $large-size) {
+
+    #newsletter {
+
+        #newsletter-form {
+
+            input {
+                width: 98%;
             }
         }
     }

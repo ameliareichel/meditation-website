@@ -35,3 +35,17 @@
         }
     }
 }
+
+@media all and (min-width: $large-size) {
+
+    #preparation {
+
+        .prep-video {
+            width: 100%;
+        }
+
+        .prep-content {
+            padding: 0 70px;
+        }
+    }
+}

@@ -10,7 +10,6 @@
             font-size: 36px;
             color: $primary-font-color;
             z-index: 100;
-            // display: none;
 
             &:hover {
                 cursor: pointer;
@@ -62,26 +61,26 @@
 @media all and (min-width: $extra-small-size) {
 
     #header {
-        
+
         .navigation-container {
             padding: 20px 60px;
             padding-bottom: 0;
-    
+
             .navigation {
-    
+
                 .nav-list {
                     padding: 0 60px;
                     padding-top: 80px;
-                    
+
                     li {
-    
+
                         a {
                             color: #fff;
                             line-height: 32px;
                             font-family: $primary-font;
                             text-shadow: $primary-font-color 0px 0px 6px;
                             transition: all 0.3s;
-    
+
                             &:hover {
                                 font-weight: 600;
                                 text-shadow: $primary-color 0px 0px 12px;
@@ -89,9 +88,55 @@
                         }
                     }
                 }
-    
+
                 .unfolded {
                     display: block;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $extra-large-size) {
+
+    #header {
+        height: 100px;
+
+        .navigation-container {
+
+            .hamburger {
+                display: none;
+            }
+
+            .navigation {
+
+                .nav-list {
+                    text-align: center;
+                    background-image: none;
+                    background-color: transparent;
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    padding: 50px 0;
+                    padding-bottom: 0;
+
+                    li {
+                        display: inline;
+
+                        a {
+                            display: inline;
+                            margin: 0 20px;
+                            color: $primary-font-color;
+                            font-family: $primary-font;
+                            text-shadow: none;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                font-weight: 400;
+                                text-shadow: $secondary-color 0px 0px 12px;
+                            }
+                        }
+                    }
                 }
             }
         }

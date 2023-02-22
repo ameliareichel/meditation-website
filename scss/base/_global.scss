@@ -32,3 +32,24 @@ section {
         padding: 0 50px;
     }
 }
+
+@media all and (min-width: $large-size) {
+
+    section {
+        padding: 0 70px;
+    }
+}
+
+@media all and (min-width: $medium-size) {
+
+    .background-image {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: $extra-large-size) {
+
+    .background-image {
+        width: 100%;
+    }
+}
